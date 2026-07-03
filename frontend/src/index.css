@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../public/assets/fonts/Nunito_Sans/NunitoSans-VariableFont.ttf")
+       format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../public/assets/fonts/Nunito_Sans/NunitoSans-Italic-VariableFont.ttf")
+       format("truetype");
+  font-style: italic;
+}
+*:not(.fa):not(.fas):not(.far):not(.fab):not([class*="fa-"]) {
+  font-family: 'Nunito Sans', sans-serif;
+}
+body {
+  font-family: "Nunito Sans", sans-serif !important;
+  margin: 0;  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

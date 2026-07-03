@@ -1,0 +1,42 @@
+services:
+
+  frontend:
+    build: ./frontend
+    container_name: ureda-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - master_service
+    environment:
+      - REACT_APP_API_URL=http://localhost:8080
+  auth_service:
+    build: ./auth_service
+    container_name: auth_service-backend
+    ports:
+      - "8001:8001"
+  master_service:
+    build: ./master_service
+    container_name: master_service-backend
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./logs:/app/logs
+    environment:
+      - CAPTCHA_ENABLED=true
+      - RECAPTCHA_SECRET=6LcwsfYsAAAAAFk8zPKQt9-5sRluUtjPgNjjPSqN
+#   postgres:
+#     image: postgres:16
+#     container_name: postgres-db
+#     restart: always
+#     environment:
+#       POSTGRES_USER: postgres
+#       POSTGRES_PASSWORD: postgres
+#       POSTGRES_DB: ureda_user
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+   
+
+# volumes:
+#   postgres_data:

@@ -1,0 +1,575 @@
+2026-06-12 10:05:13,Login Page,Login User- Action Log Error,"Post ""http://auth_service-backend:8001/api/auth/insert-actionlog"": dial tcp: lookup auth_service-backend: no such host"
+2026-06-12 12:20:04,Office Page,SaveUpdateOffice Action Log Error,"Post ""http://auth_service-backend:8001/api/auth/insert-actionlog"": dial tcp: lookup auth_service-backend: no such host"
+2026-06-12 12:20:04,Office Page,SaveUpdateOffice,"pq: function public.f_insertupdate_officedetail(unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown) does not exist at column 8 (42883)"
+2026-06-12 12:21:58,Office Page,SaveUpdateOffice Action Log Error,"Post ""http://auth_service-backend:8001/api/auth/insert-actionlog"": dial tcp: lookup auth_service-backend: no such host"
+2026-06-12 12:21:58,Office Page,SaveUpdateOffice,"pq: function public.f_insertupdate_officedetail(unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown) does not exist at column 8 (42883)"
+2026-06-12 12:38:22,Office Page,GetOfficeList,pq: function public.f_get_office(unknown) does not exist at column 16 (42883)
+2026-06-12 12:38:22,Office Page,GetOfficeList,pq: function public.f_get_office(unknown) does not exist at column 16 (42883)
+2026-06-12 12:52:29,Office Page,GetOfficeList,"pq: invalid input syntax for type integer: """" (22P02)"
+2026-06-12 12:52:29,Office Page,GetOfficeList,"pq: invalid input syntax for type integer: """" (22P02)"
+2026-06-12 12:56:01,Office Page,GetOfficeList,"pq: invalid input syntax for type integer: """" (22P02)"
+2026-06-12 12:56:01,Office Page,GetOfficeList,"pq: invalid input syntax for type integer: """" (22P02)"
+2026-06-12 13:00:55,Office Page,GetOfficeList,EOF
+2026-06-12 13:00:55,Office Page,GetOfficeList,EOF
+2026-06-12 13:02:01,Office Page,GetOfficeList,EOF
+2026-06-12 13:02:01,Office Page,GetOfficeList,EOF
+2026-06-12 13:02:04,Office Page,GetOfficeList,EOF
+2026-06-12 13:02:04,Office Page,GetOfficeList,EOF
+2026-06-12 13:02:23,Office Page,GetOfficeList,EOF
+2026-06-12 13:02:23,Office Page,GetOfficeList,EOF
+2026-06-12 13:02:27,Office Page,GetOffices,pq: function public.f_get_office() does not exist at column 16 (42883)
+2026-06-12 13:02:28,Office Page,GetOffices,pq: function public.f_get_office() does not exist at column 16 (42883)
+2026-06-12 13:02:30,Office Page,GetOffices,pq: function public.f_get_office() does not exist at column 16 (42883)
+2026-06-12 13:03:19,Office Page,GetOfficeList,EOF
+2026-06-12 13:03:19,Office Page,GetOfficeList,EOF
+2026-06-12 13:03:21,Office Page,GetOffices,pq: function public.f_get_office() does not exist at column 16 (42883)
+2026-06-12 13:03:23,Office Page,GetOffices,pq: function public.f_get_office() does not exist at column 16 (42883)
+2026-06-12 13:04:30,Office Page,GetOfficeList,EOF
+2026-06-12 13:04:30,Office Page,GetOfficeList,EOF
+2026-06-12 13:07:23,Office Page,GetOfficeList,EOF
+2026-06-12 13:07:23,Office Page,GetOfficeList,EOF
+2026-06-12 13:15:33,Office Page,GetOfficeList,EOF
+2026-06-12 13:15:33,Office Page,GetOfficeList,EOF
+2026-06-12 13:24:42,Office Page,GetOfficeList,"pq: column reference ""office_level_id"" is ambiguous (42702)"
+2026-06-12 13:24:42,Office Page,GetOfficeList,"pq: column reference ""office_level_id"" is ambiguous (42702)"
+2026-06-12 13:24:47,Office Page,GetOfficeList,"pq: column reference ""office_level_id"" is ambiguous (42702)"
+2026-06-12 13:24:48,Office Page,GetOfficeList,"pq: column reference ""office_level_id"" is ambiguous (42702)"
+2026-06-12 13:30:51,Office Page,GetOffices,pq: function public.f_get_office(unknown) does not exist at column 16 (42883)
+2026-06-12 13:30:53,Office Page,GetOffices,pq: function public.f_get_office(unknown) does not exist at column 16 (42883)
+2026-06-12 13:35:08,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:35:08,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:36:03,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:36:03,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:36:14,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:36:14,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:36:15,Office Page,GetOffices,pq: function public.f_get_office(unknown) does not exist at column 16 (42883)
+2026-06-12 13:37:30,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:37:30,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:40:11,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:40:11,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:40:35,Office Page,GetOffices,pq: function public.f_get_office(unknown) does not exist at column 16 (42883)
+2026-06-12 13:40:45,Office Page,GetOffices,pq: function public.f_get_office(unknown) does not exist at column 16 (42883)
+2026-06-12 13:43:22,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:43:22,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:44:42,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:44:48,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 13:44:58,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 14:00:13,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 14:00:13,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 14:06:53,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 14:06:53,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 14:09:28,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 14:09:28,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 14:11:16,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 14:11:16,Office Page,GetOfficeList,"sql: Scan error on column index 10, name ""nodel_name"": converting NULL to string is unsupported"
+2026-06-12 17:32:51,Office Page,SaveUpdateOffice,office name is required
+2026-06-12 17:33:00,Office Page,SaveUpdateOffice,office name is required
+2026-06-12 17:36:13,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-12 17:36:41,Office Page,SaveUpdateOffice,"pq: null value in column ""log_id"" of relation ""m_office_log"" violates not-null constraint (23502)"
+2026-06-12 17:39:14,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-12 17:43:47,Office Page,SaveUpdateOffice,"pq: null value in column ""log_id"" of relation ""m_office_log"" violates not-null constraint (23502)"
+2026-06-12 17:46:10,Office Page,SaveUpdateOffice,"pq: null value in column ""log_id"" of relation ""m_office_log"" violates not-null constraint (23502)"
+2026-06-12 17:46:28,Office Page,SaveUpdateOffice,"pq: null value in column ""log_id"" of relation ""m_office_log"" violates not-null constraint (23502)"
+2026-06-12 17:46:44,Office Page,SaveUpdateOffice,"pq: null value in column ""log_id"" of relation ""m_office_log"" violates not-null constraint (23502)"
+2026-06-12 17:49:09,Office Page,SaveUpdateOffice,"pq: null value in column ""log_id"" of relation ""m_office_log"" violates not-null constraint (23502)"
+2026-06-12 18:00:45,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-12 18:00:45,Office Page,SaveUpdateOffice,"sql: expected 1 destination arguments in Scan, not 2"
+2026-06-12 18:03:49,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-12 18:03:49,Office Page,SaveUpdateOffice,"sql: expected 1 destination arguments in Scan, not 2"
+2026-06-12 18:04:37,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-12 18:04:37,Office Page,SaveUpdateOffice,"sql: expected 1 destination arguments in Scan, not 2"
+2026-06-15 10:06:33,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:06:33,Office Page,SaveUpdateOffice,"sql: expected 1 destination arguments in Scan, not 2"
+2026-06-15 10:06:39,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:06:39,Office Page,SaveUpdateOffice,"sql: expected 1 destination arguments in Scan, not 2"
+2026-06-15 10:06:54,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:06:54,Office Page,SaveUpdateOffice,"sql: expected 1 destination arguments in Scan, not 2"
+2026-06-15 10:06:56,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:06:56,Office Page,SaveUpdateOffice,"sql: expected 1 destination arguments in Scan, not 2"
+2026-06-15 10:06:59,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:06:59,Office Page,SaveUpdateOffice,"sql: expected 1 destination arguments in Scan, not 2"
+2026-06-15 10:09:05,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:09:11,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:09:31,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:09:36,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:09:39,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:16:41,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:20:12,Office Page,SaveUpdateOffice Action Log Error,invalid character 'p' looking for beginning of value
+2026-06-15 10:24:35,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 10:25:05,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 10:41:46,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 10:51:07,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 10:51:07,Office Page,SaveUpdateOffice,sql: no rows in result set
+2026-06-15 10:51:10,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 10:51:10,Office Page,SaveUpdateOffice,sql: no rows in result set
+2026-06-15 10:51:26,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 10:51:26,Office Page,SaveUpdateOffice,sql: no rows in result set
+2026-06-15 10:57:08,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 10:57:08,Office Page,SaveUpdateOffice,sql: no rows in result set
+2026-06-15 10:58:09,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 10:58:09,Office Page,SaveUpdateOffice,sql: no rows in result set
+2026-06-15 11:02:02,Office Page,SaveUpdateOffice,mobile number must be 10 digits
+2026-06-15 11:58:57,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 13:01:47,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:01:47,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:03:41,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:03:41,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:03:41,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:03:41,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:03:55,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:03:55,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:03:58,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:03:58,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:04,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:04,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:05,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:05,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:11,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:11,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:25,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:25,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:53,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:53,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:53,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:06:53,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:07:21,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:07:21,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:08:16,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:08:16,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:08:42,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:08:42,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:10:00,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:10:00,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:10:17,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:10:17,Office Page,GetOfficeList,pq: column o.officgfe_name does not exist (42703)
+2026-06-15 13:22:33,Office Page,GetOfficeList,pq: COALESCE types character varying and bigint cannot be matched at position 3:60 (42804)
+2026-06-15 13:22:33,Office Page,GetOfficeList,pq: COALESCE types character varying and bigint cannot be matched at position 3:60 (42804)
+2026-06-15 13:29:04,Office Page,SaveUpdateOffice,nodal officer mobile number must be 10 digits
+2026-06-15 13:30:35,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 13:30:40,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 13:30:45,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-15 13:30:53,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 12:44:00,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:02,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:20,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:20,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:24,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:24,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:25,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:25,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:25,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:25,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:26,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:26,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:26,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:26,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:27,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:27,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:27,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:27,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:28,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:28,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:28,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:28,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:37,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:37,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:39,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:39,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:41,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:44:41,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:03,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:03,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:05,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:05,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:18,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:18,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:20,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:20,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:22,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:45:22,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:49:43,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 12:49:43,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:03:39,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:03:39,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:03:41,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:03:41,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:04:08,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:04:08,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:04:57,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:05:40,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:05:40,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:05:41,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:05:41,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:05:42,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:05:42,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:06:28,Office Page,SaveUpdateOffice,"pq: insert or update on table ""m_emp_personal_details"" violates foreign key constraint ""fk_emp_designation"" (23503)"
+2026-06-16 13:06:38,Office Page,SaveUpdateOffice,"pq: insert or update on table ""m_emp_personal_details"" violates foreign key constraint ""fk_emp_district"" (23503)"
+2026-06-16 13:06:50,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:09:16,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:09:16,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:09:26,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:09:27,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:09:30,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:09:30,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:09:57,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:09:57,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:11:11,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 13:11:11,Office Page,GetOfficeList,"pq: function public.f_get_employeelist(unknown, unknown) does not exist at position 5:7 (42883)"
+2026-06-16 14:15:12,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:18:52,Office Page,SaveUpdateOffice,json: cannot unmarshal number into Go struct field OfficeModel.office_id of type string
+2026-06-16 14:19:31,Office Page,SaveUpdateOffice,json: cannot unmarshal number into Go struct field OfficeModel.office_id of type string
+2026-06-16 14:21:51,Office Page,SaveUpdateOffice,json: cannot unmarshal number into Go struct field OfficeModel.office_id of type string
+2026-06-16 14:22:57,Office Page,SaveUpdateOffice,json: cannot unmarshal number into Go struct field OfficeModel.office_id of type string
+2026-06-16 14:24:20,Office Page,SaveUpdateOffice,json: cannot unmarshal number into Go struct field OfficeModel.office_id of type string
+2026-06-16 14:24:39,Office Page,SaveUpdateOffice,json: cannot unmarshal number into Go struct field OfficeModel.office_id of type string
+2026-06-16 14:25:05,Office Page,SaveUpdateOffice,json: cannot unmarshal number into Go struct field OfficeModel.office_id of type string
+2026-06-16 14:25:41,Office Page,SaveUpdateOffice,json: cannot unmarshal number into Go struct field OfficeModel.office_id of type string
+2026-06-16 14:26:41,Office Page,SaveUpdateOffice,json: cannot unmarshal number into Go struct field OfficeModel.office_id of type string
+2026-06-16 14:26:45,Office Page,SaveUpdateOffice,"pq: duplicate key value violates unique constraint ""m_emp_personal_details_emp_code_key"" (23505)"
+2026-06-16 14:26:50,Office Page,SaveUpdateOffice,"pq: duplicate key value violates unique constraint ""m_emp_personal_details_emp_code_key"" (23505)"
+2026-06-16 14:34:12,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:34:17,Office Page,SaveUpdateOffice Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:35:34,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:35:34,Office Page,SaveUpdateOffice,"pq: invalid input syntax for type date: """" (22007)"
+2026-06-16 14:40:59,Office Page,GetOfficeList,EOF
+2026-06-16 14:40:59,Office Page,GetOfficeList,EOF
+2026-06-16 14:43:43,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:43:43,Office Page,SaveUpdateOffice,"pq: invalid input syntax for type date: """" (22007)"
+2026-06-16 14:46:47,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:46:47,Office Page,SaveUpdateOffice,"pq: invalid input syntax for type date: """" (22007)"
+2026-06-16 14:48:31,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:48:31,Office Page,SaveUpdateOffice,"pq: insert or update on table ""m_emp_personal_details"" violates foreign key constraint ""fk_emp_action_log"" (23503)"
+2026-06-16 14:49:49,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:49:54,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:53:49,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 14:53:52,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 15:09:59,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 15:11:41,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 15:12:07,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 15:13:59,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 15:16:12,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 15:18:55,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 15:19:14,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 15:23:01,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-16 16:01:31,Office Page,SaveUpdateOffice,"pq: duplicate key value violates unique constraint ""m_emp_personal_details_emp_code_key"" (23505)"
+2026-06-16 16:01:56,Office Page,SaveUpdateOffice,"pq: duplicate key value violates unique constraint ""m_emp_personal_details_emp_code_key"" (23505)"
+2026-06-16 16:03:35,Office Page,SaveUpdateOffice,"pq: duplicate key value violates unique constraint ""m_emp_personal_details_emp_code_key"" (23505)"
+2026-06-17 11:10:20,Office Page,GetOfficeList,"pq: missing FROM-clause entry for table ""ol"" (42P01)"
+2026-06-17 11:10:20,Office Page,GetOfficeList,"pq: missing FROM-clause entry for table ""ol"" (42P01)"
+2026-06-17 11:11:03,Office Page,GetOfficeList,"sql: expected 29 destination arguments in Scan, not 30"
+2026-06-17 11:11:03,Office Page,GetOfficeList,"sql: expected 29 destination arguments in Scan, not 30"
+2026-06-17 11:11:04,Office Page,GetOfficeList,"sql: expected 29 destination arguments in Scan, not 30"
+2026-06-17 11:11:04,Office Page,GetOfficeList,"sql: expected 29 destination arguments in Scan, not 30"
+2026-06-17 12:10:10,Office Page,SaveUpdateOffice,"pq: insert or update on table ""m_emp_personal_details"" violates foreign key constraint ""fk_emp_district"" (23503)"
+2026-06-17 12:10:40,Office Page,GetOfficeList,"sql: Scan error on column index 12, name ""coalesce"": converting NULL to string is unsupported"
+2026-06-17 12:10:43,Office Page,GetOfficeList,"sql: Scan error on column index 12, name ""coalesce"": converting NULL to string is unsupported"
+2026-06-17 12:10:43,Office Page,GetOfficeList,"sql: Scan error on column index 12, name ""coalesce"": converting NULL to string is unsupported"
+2026-06-17 12:16:05,Office Page,GetOfficeList,"sql: Scan error on column index 12, name ""dob"": converting NULL to string is unsupported"
+2026-06-17 12:16:05,Office Page,GetOfficeList,"sql: Scan error on column index 12, name ""dob"": converting NULL to string is unsupported"
+2026-06-17 12:16:06,Office Page,GetOfficeList,"sql: Scan error on column index 12, name ""dob"": converting NULL to string is unsupported"
+2026-06-17 12:16:06,Office Page,GetOfficeList,"sql: Scan error on column index 12, name ""dob"": converting NULL to string is unsupported"
+2026-06-17 12:53:32,Office Page,GetOfficeList,"sql: Scan error on column index 12, name ""dob"": converting NULL to string is unsupported"
+2026-06-17 12:53:32,Office Page,GetOfficeList,"sql: Scan error on column index 12, name ""dob"": converting NULL to string is unsupported"
+2026-06-17 12:54:27,Office Page,GetOfficeList,"pq: invalid input syntax for type date: """" at position 3:80 (22007)"
+2026-06-17 12:54:27,Office Page,GetOfficeList,"pq: invalid input syntax for type date: """" at position 3:80 (22007)"
+2026-06-17 12:55:23,Office Page,GetOfficeList,"pq: syntax error at or near ""FROM"" at position 6:2 (42601)"
+2026-06-17 12:55:23,Office Page,GetOfficeList,"pq: syntax error at or near ""FROM"" at position 6:2 (42601)"
+2026-06-17 16:58:43,Office Page,GetOfficeList,"pq: column reference ""status"" is ambiguous (42702)"
+2026-06-17 16:58:43,Office Page,GetOfficeList,"pq: column reference ""status"" is ambiguous (42702)"
+2026-06-17 16:59:58,Office Page,GetOfficeList,"pq: column reference ""status"" is ambiguous (42702)"
+2026-06-17 16:59:58,Office Page,GetOfficeList,"pq: column reference ""status"" is ambiguous (42702)"
+2026-06-17 16:59:59,Office Page,GetOfficeList,"pq: column reference ""status"" is ambiguous (42702)"
+2026-06-17 16:59:59,Office Page,GetOfficeList,"pq: column reference ""status"" is ambiguous (42702)"
+2026-06-17 16:59:59,Office Page,GetOfficeList,"pq: column reference ""status"" is ambiguous (42702)"
+2026-06-17 16:59:59,Office Page,GetOfficeList,"pq: column reference ""status"" is ambiguous (42702)"
+2026-06-18 12:06:59,Employee Page,SaveUpdateEmployee,"pq: function digest(unknown, unknown) does not exist (42883)"
+2026-06-18 14:52:27,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:52:27,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:52:27,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:52:27,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:53:49,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:54:17,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:54:22,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:56:03,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:56:09,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:56:09,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:57:15,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:57:15,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:57:16,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:57:16,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:57:17,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:57:17,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:57:52,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:57:52,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:59:34,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 14:59:34,User Management,GetUsersListHandler,pq: operator does not exist: integer = character varying (42883)
+2026-06-18 15:00:19,User Management,GetUsersListHandler,"pq: invalid input syntax for type integer: """" (22P02)"
+2026-06-18 15:00:19,User Management,GetUsersListHandler,"pq: invalid input syntax for type integer: """" (22P02)"
+2026-06-18 15:00:20,User Management,GetUsersListHandler,"pq: invalid input syntax for type integer: """" (22P02)"
+2026-06-18 15:00:20,User Management,GetUsersListHandler,"pq: invalid input syntax for type integer: """" (22P02)"
+2026-06-18 15:03:19,User Management,GetUsersListHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-18 15:03:21,User Management,GetUsersListHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-18 15:03:24,User Management,GetUsersListHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-18 15:03:46,User Management,GetUsersListHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-18 15:04:35,User Management,GetUsersListHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-19 11:50:04,User Management Page,UpdateUserHandler,pq: syntax error at end of input at column 76 (42601)
+2026-06-19 11:57:52,User Management Page,UpdateUserHandler,pq: syntax error at end of input at column 76 (42601)
+2026-06-19 12:00:55,User Management Page,UpdateUserHandler,pq: syntax error at end of input at column 76 (42601)
+2026-06-19 12:08:50,User Management Page,UpdateUserHandler,pq: syntax error at end of input at column 76 (42601)
+2026-06-19 12:19:46,User Management Page,UpdateUserHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-19 12:23:01,User Management Page,UpdateUserHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-19 12:25:11,User Management Page,UpdateUserHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-19 12:25:48,User Management Page,UpdateUserHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-19 12:28:30,User Management Page,UpdateUserHandler,json: cannot unmarshal string into Go struct field EmployeePersonalModel.role_id of type int
+2026-06-19 13:32:40,Office Page,SaveUpdateOffice,"pq: relation ""public.mdf_office"" does not exist (42P01)"
+2026-06-19 13:35:11,Office Page,SaveUpdateOffice,"pq: relation ""public.mdf_office"" does not exist (42P01)"
+2026-06-19 13:37:14,Office Page,SaveUpdateOffice,"pq: relation ""public.mdf_office"" does not exist (42P01)"
+2026-06-19 13:38:15,Office Page,SaveUpdateOffice,"pq: relation ""public.mdf_office"" does not exist (42P01)"
+2026-06-19 14:42:14,Office Page,SaveUpdateOffice,"pq: relation ""public.mdf_office"" does not exist (42P01)"
+2026-06-19 14:42:27,Office Page,SaveUpdateOffice,"pq: relation ""public.mdf_office"" does not exist (42P01)"
+2026-06-19 14:52:49,Office Page,SaveUpdateOffice,"pq: relation ""public.mdf_office"" does not exist (42P01)"
+2026-06-19 15:07:14,Office Page,SaveUpdateOffice,"pq: relation ""public.mdf_office"" does not exist (42P01)"
+2026-06-19 15:07:28,Office Page,SaveUpdateOffice,"pq: relation ""public.mdf_office"" does not exist (42P01)"
+2026-06-19 15:08:20,Office Page,GetOfficeList,pq: column o.office_nhgame does not exist (42703)
+2026-06-19 15:08:20,Office Page,GetOfficeList,pq: column o.office_nhgame does not exist (42703)
+2026-06-19 15:08:26,Office Page,GetOfficeList,pq: column o.office_nhgame does not exist (42703)
+2026-06-19 15:08:54,Employee Page,SaveUpdateEmployee,"pq: column ""fdgreligion_id"" of relation ""m_emp_personal_details"" does not exist (42703)"
+2026-06-19 15:09:21,Employee Page,SaveUpdateEmployee,"pq: relation ""puxcblic.m_emp_personal_details_log"" does not exist (42P01)"
+2026-06-19 15:13:13,Employee Page,SaveUpdateEmployee,"pq: column ""fdgreligion_id"" of relation ""m_emp_personal_details"" does not exist (42703)"
+2026-06-19 17:02:13,Employee Page,SaveUpdateEmployee,"pq: column ""fdgreligion_id"" of relation ""m_emp_personal_details"" does not exist (42703)"
+2026-06-19 17:04:13,Employee Page,SaveUpdateEmployee,"pq: column ""fdgreligion_id"" of relation ""m_emp_personal_details"" does not exist (42703)"
+2026-06-19 17:08:41,Employee Page,SaveUpdateEmployee,"pq: column ""fdgreligion_id"" of relation ""m_emp_personal_details"" does not exist (42703)"
+2026-06-19 17:12:57,Employee Page,SaveUpdateEmployee,"pq: column ""fdgreligion_id"" of relation ""m_emp_personal_details"" does not exist (42703)"
+2026-06-19 17:15:45,Employee Page,SaveUpdateEmployee,"pq: column ""fdgreligion_id"" of relation ""m_emp_personal_details"" does not exist (42703)"
+2026-06-19 17:25:04,Employee Page,SaveUpdateEmployee,"pq: column ""fdgreligion_id"" of relation ""m_emp_personal_details"" does not exist (42703)"
+2026-06-22 10:09:28,Office Page,GetDistrict Stateid fetch,EOF
+2026-06-22 10:09:28,Office Page,GetDistrict Stateid fetch,EOF
+2026-06-22 10:12:29,Office Page,GetDistrict Stateid fetch,EOF
+2026-06-22 10:19:21,Office Page,GetDistrict Stateid fetch,EOF
+2026-06-22 11:02:58,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:02:58,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:03:47,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:05:24,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:11:18,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:11:19,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:17:50,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:17:50,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:18:02,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:18:02,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:19:03,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:19:03,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:19:04,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:19:04,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:21:15,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-22 11:21:15,Employee Page,GetEmployeeListHandler,pq: column p.empdf_code does not exist (42703)
+2026-06-23 13:04:15,Office Page,SaveUpdateOffice,"pq: relation ""public.m_emp_persosanal_details"" does not exist (42P01)"
+2026-06-23 15:51:32,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-23 15:51:32,Employee Page,SaveUpdateEmployee,sql: no rows in result set
+2026-06-23 15:56:08,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-23 15:56:08,Employee Page,SaveUpdateEmployee,sql: no rows in result set
+2026-06-23 15:56:24,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-23 15:56:24,Employee Page,SaveUpdateEmployee,sql: no rows in result set
+2026-06-23 16:00:21,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-23 16:00:21,Employee Page,SaveUpdateEmployee,sql: no rows in result set
+2026-06-23 16:08:54,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-23 16:08:54,Employee Page,SaveUpdateEmployee,sql: no rows in result set
+2026-06-23 16:09:04,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-23 16:09:04,Employee Page,SaveUpdateEmployee,sql: no rows in result set
+2026-06-23 16:09:14,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-23 16:09:14,Employee Page,SaveUpdateEmployee,sql: no rows in result set
+2026-06-23 16:28:35,Employee Page,SaveUpdateEmployee Action Log Error,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-23 16:28:35,Employee Page,SaveUpdateEmployee,"pq: insert or update on table ""m_emp_personal_details"" violates foreign key constraint ""fk_emp_designation"" (23503)"
+2026-06-23 16:39:26,Employee Page,SaveUpdateEmployee,json: cannot unmarshal string into Go struct field EmployeePersonalModel.office_level_id of type int
+2026-06-23 16:40:19,Employee Page,SaveUpdateEmployee,json: cannot unmarshal string into Go struct field EmployeePersonalModel.office_level_id of type int
+2026-06-23 16:41:26,Employee Page,SaveUpdateEmployee,json: cannot unmarshal string into Go struct field EmployeePersonalModel.office_level_id of type int
+2026-06-23 16:45:29,Employee Page,SaveUpdateEmployee,json: cannot unmarshal string into Go struct field EmployeePersonalModel.office_level_id of type int
+2026-06-23 16:47:53,Employee Page,SaveUpdateEmployee,json: cannot unmarshal string into Go struct field EmployeePersonalModel.desig_id of type int
+2026-06-23 16:51:53,Employee Page,SaveUpdateEmployee,json: cannot unmarshal string into Go struct field EmployeePersonalModel.desig_id of type int
+2026-06-23 16:58:07,Employee Page,SaveUpdateEmployee,json: cannot unmarshal string into Go struct field EmployeePersonalModel.desig_id of type int
+2026-06-23 17:33:08,Employee Page,SaveUpdateEmployee,"pq: insert or update on table ""m_emp_personal_details"" violates foreign key constraint ""fk_emp_designation"" (23503)"
+2026-06-24 11:19:17,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 11:19:18,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 11:24:07,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 11:24:08,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 11:28:23,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 11:28:25,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 11:30:41,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 11:30:43,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 11:32:46,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 12:05:45,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 12:05:56,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-24 12:06:28,Login Page,Login User- Action Log Error,"Post ""http://localhost:8001/api/auth/insert-actionlog"": dial tcp [::1]:8001: connectex: No connection could be made because the target machine actively refused it."
+2026-06-29 12:44:56,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:44:56,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:45:43,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:45:43,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:46:25,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:46:25,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:47:38,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:47:38,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:48:50,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:48:50,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:50:14,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:50:14,Office Page,GetOfficeList,pq: column o.osdfdffice_name does not exist (42703)
+2026-06-29 12:50:53,Employee Page,GetEmployeeListHandler,"pq: missing FROM-clause entry for table ""pdfs"" (42P01)"
+2026-06-29 12:50:53,Employee Page,GetEmployeeListHandler,"pq: missing FROM-clause entry for table ""pdfs"" (42P01)"
+2026-06-29 12:51:33,Employee Page,GetEmployeeListHandler,"pq: missing FROM-clause entry for table ""pdfs"" (42P01)"
+2026-06-29 12:51:33,Employee Page,GetEmployeeListHandler,"pq: missing FROM-clause entry for table ""pdfs"" (42P01)"
+2026-06-30 12:42:52,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 12:42:52,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 12:43:16,Scheme Master Page,UpdateSchemeTypeHandler,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-30 12:43:16,Scheme Master Page,UpdateSchemeTypeHandler,"pq: function public.f_insertupdate_schemetype(unknown, unknown, unknown, unknown, unknown, unknown) does not exist at column 30 (42883)"
+2026-06-30 12:44:45,Scheme Master Page,UpdateSchemeTypeHandler,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-30 12:44:45,Scheme Master Page,UpdateSchemeTypeHandler,sql: no rows in result set
+2026-06-30 12:47:51,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 12:47:51,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 12:47:54,Scheme Master Page,UpdateSchemeTypeHandler,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-30 12:54:59,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 12:54:59,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 13:37:04,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 13:37:04,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 13:39:33,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 13:39:33,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 13:41:35,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 14:10:03,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 14:10:03,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 15:03:58,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 15:03:58,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 15:04:02,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 15:04:02,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 15:32:48,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 15:32:48,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 15:54:32,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 15:54:32,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:32:06,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:32:06,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:33:42,Scheme Master Page,UpdateSubsidyTypeHandler,pq: INSERT has more target columns than expressions (42601)
+2026-06-30 16:35:09,Scheme Master Page,UpdateCategoryHandler,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-30 16:35:09,Scheme Master Page,UpdateCategoryHandler,sql: no rows in result set
+2026-06-30 16:35:49,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:35:49,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:38:06,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:38:06,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:38:09,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:38:09,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:38:32,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:38:32,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:38:33,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:38:33,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:39:23,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:39:23,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:41:29,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:41:29,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:57:24,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:57:24,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:57:24,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 16:57:31,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:57:31,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:57:31,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 16:58:07,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 16:58:08,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 16:58:08,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:00:17,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:00:17,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:01:36,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:01:36,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:01:37,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:02:05,Scheme Master Page,UpdateSchemeTypeHandler,"auth service error: {""message"":""pq: could not complete operation in a failed transaction"",""success"":false}
+"
+2026-06-30 17:02:05,Scheme Master Page,UpdateSchemeTypeHandler,sql: no rows in result set
+2026-06-30 17:13:17,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:13:17,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:13:29,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:15:54,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:15:56,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:15:57,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:15:59,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:15:59,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:16:00,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:16:00,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:16:01,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:16:41,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:16:51,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:16:54,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:18:02,Scheme Master Page,GetSubCategoryListHandler,"sql: expected 7 destination arguments in Scan, not 5"
+2026-06-30 17:20:30,Scheme Master Page,UpdateTechnologyHandler,"pq: column ""p_technology_name_local"" does not exist (42703)"
+2026-06-30 17:20:57,Scheme Master Page,GetTechnologyListHandler,"sql: expected 6 destination arguments in Scan, not 5"
+2026-06-30 17:20:59,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:20:59,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:21:00,Scheme Master Page,GetTechnologyListHandler,"sql: expected 6 destination arguments in Scan, not 5"
+2026-06-30 17:21:42,Scheme Master Page,GetTechnologyListHandler,"sql: expected 6 destination arguments in Scan, not 5"
+2026-06-30 17:22:03,Scheme Master Page,GetTechnologyListHandler,"sql: expected 6 destination arguments in Scan, not 5"
+2026-06-30 17:23:00,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:00,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:07,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:07,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:12,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:12,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:14,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:23:14,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:14,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:19,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:19,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:25,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:25,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:23:34,Scheme Master Page,GetDocumentTypeListHandler,"sql: Scan error on column index 2, name ""document_type_name_local"": converting NULL to string is unsupported"
+2026-06-30 17:28:35,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:28:42,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:38:52,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:40:32,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:41:13,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:41:26,Scheme Master Page,UpdateVendorHandler,"pq: new row for relation ""m_vendor"" violates check constraint ""chk_vendor_active"" (23514)"
+2026-06-30 17:42:05,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:42:12,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:42:17,Scheme Master Page,GetVendorListHandler,pq: structure of query does not match function result type (42804)
+2026-06-30 17:43:12,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
+2026-06-30 17:43:13,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
+2026-06-30 17:43:13,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
+2026-06-30 17:43:14,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
+2026-06-30 17:43:14,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
+2026-06-30 17:43:14,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
+2026-06-30 17:43:14,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
