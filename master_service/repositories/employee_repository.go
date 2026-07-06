@@ -7,7 +7,7 @@ import (
 
 func GetReligion() ([]models.ReligionModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from public.f_get_religion()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_religion()")
 
 	if err != nil {
 		return nil, err
@@ -35,7 +35,7 @@ func GetReligion() ([]models.ReligionModel, error) {
 }
 func GetDesignation() ([]models.DesignationModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from public.f_get_designation()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_designation()")
 
 	if err != nil {
 		return nil, err
@@ -63,7 +63,7 @@ func GetDesignation() ([]models.DesignationModel, error) {
 }
 func GetNameTitle() ([]models.NameTitleModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from public.f_get_nametitle()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_nametitle()")
 
 	if err != nil {
 		return nil, err
@@ -96,7 +96,7 @@ func GetEmployeeList(OfficeLevelID int, OfficeID string, Status string, Verified
 	COALESCE(emp_spouse_name_local, ''), COALESCE(emp_photo, null), COALESCE(TO_CHAR(dob, 'dd/MM/yyyy'), ''), COALESCE(gender, ''), COALESCE(religion_id, 0),
 	state_id,district_id,address,mobile_no1,mobile_no2,	email_id, office_level_id, office_id,office_level_name,office_name,
 	 COALESCE(TO_CHAR(joining_date, 'dd/MM/yyyy'), ''), desig_id, desig_name, emp_type, status, verified_yn, action_log_id	,tot_employee,tot_verified,tot_draft,tot_active,tot_deactive	
-	FROM public.f_get_employeelist($1,$2,$3,$4,$5)`, OfficeLevelID, OfficeID, Status, VerifiedStatus, searchText)
+	FROM master.f_get_employeelist($1,$2,$3,$4,$5)`, OfficeLevelID, OfficeID, Status, VerifiedStatus, searchText)
 
 	if err != nil {
 		return nil, err

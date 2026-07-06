@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"log"
 	"net/http"
 	"regexp"
 	"strings"
@@ -83,7 +82,7 @@ func SaveUpdateOfficeHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -103,9 +102,6 @@ func SaveUpdateOfficeHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 2
 
 	var officeDetail models.OfficeModel
 
@@ -137,30 +133,10 @@ func SaveUpdateOfficeHandler(w http.ResponseWriter, r *http.Request) {
 	action := officeDetail.Action
 	status := officeDetail.Status
 
-	if action == "S" {
-		action_type_code = 4
-	} else if action == "U" {
-		action_type_code = 5
-	} else if action == "R" {
-		action_type_code = 6
-	} else if action == "A" {
-		action_type_code = 7
-	} else if action == "D" {
-		action_type_code = 8
-	}
-
-	fmt.Println("action:" + action)
-	fmt.Println("status:" + status)
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("Office Page", "SaveUpdateOffice Action Log Error", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 	// Call service to insert user
-	success, message, err = services.InsertUpdateOffice(officeDetail, action, status, actionLogID)
+	success, message, err = services.InsertUpdateOffice(officeDetail, action, status, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV(

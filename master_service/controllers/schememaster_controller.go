@@ -3,7 +3,6 @@ package controllers
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 	"userapi/models"
 	"userapi/services"
@@ -232,7 +231,7 @@ func UpdateSchemeTypeHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -252,9 +251,6 @@ func UpdateSchemeTypeHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 3
 
 	var schemeTypes models.SchemeTypeModel
 
@@ -271,30 +267,11 @@ func UpdateSchemeTypeHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	action := schemeTypes.Action
-	fmt.Println("called action" + action)
-	fmt.Println("called scheme", schemeTypes.SchemeTypeID)
 
-	if action == "S" {
-		action_type_code = 20
-	} else if action == "U" {
-		action_type_code = 21
-	} else if action == "R" {
-		action_type_code = 22
-	} else if action == "A" {
-		action_type_code = 23
-	} else if action == "D" {
-		action_type_code = 24
-	}
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("Scheme Master Page", "UpdateSchemeTypeHandler", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 
-	success, message, err = services.UpdateSchemeType(schemeTypes, action, actionLogID)
+	success, message, err = services.UpdateSchemeType(schemeTypes, action, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV("Scheme Master Page", "UpdateSchemeTypeHandler", err.Error())
@@ -349,7 +326,7 @@ func UpdateSubsidyTypeHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -369,9 +346,6 @@ func UpdateSubsidyTypeHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 3
 
 	var subsidyTypes models.SubsidyTypeModel
 
@@ -388,30 +362,11 @@ func UpdateSubsidyTypeHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	action := subsidyTypes.Action
-	fmt.Println("called action" + action)
-	fmt.Println("called scheme", subsidyTypes.SubsidyTypeID)
 
-	if action == "S" {
-		action_type_code = 25
-	} else if action == "U" {
-		action_type_code = 26
-	} else if action == "R" {
-		action_type_code = 27
-	} else if action == "A" {
-		action_type_code = 28
-	} else if action == "D" {
-		action_type_code = 29
-	}
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("Scheme Master Page", "UpdateSubsidyTypeHandler", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 
-	success, message, err = services.UpdateSubsidyType(subsidyTypes, action, actionLogID)
+	success, message, err = services.UpdateSubsidyType(subsidyTypes, action, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV("Scheme Master Page", "UpdateSubsidyTypeHandler", err.Error())
@@ -466,7 +421,7 @@ func UpdateCategoryHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -486,9 +441,6 @@ func UpdateCategoryHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 3
 
 	var category models.SchemeCategoryModel
 
@@ -505,30 +457,11 @@ func UpdateCategoryHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	action := category.Action
-	fmt.Println("called action" + action)
-	fmt.Println("called category", category.CategoryID)
 
-	if action == "S" {
-		action_type_code = 30
-	} else if action == "U" {
-		action_type_code = 31
-	} else if action == "R" {
-		action_type_code = 32
-	} else if action == "A" {
-		action_type_code = 33
-	} else if action == "D" {
-		action_type_code = 34
-	}
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("Scheme Master Page", "UpdateCategoryHandler", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 
-	success, message, err = services.UpdateCategory(category, action, actionLogID)
+	success, message, err = services.UpdateCategory(category, action, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV("Scheme Master Page", "UpdateCategoryHandler", err.Error())
@@ -583,7 +516,7 @@ func UpdateSubCategoryHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -603,9 +536,6 @@ func UpdateSubCategoryHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 3
 
 	var subcategory models.SchemeSubCategoryModel
 
@@ -622,30 +552,11 @@ func UpdateSubCategoryHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	action := subcategory.Action
-	fmt.Println("called action" + action)
-	fmt.Println("called sub category", subcategory.SubCategoryID)
 
-	if action == "S" {
-		action_type_code = 35
-	} else if action == "U" {
-		action_type_code = 36
-	} else if action == "R" {
-		action_type_code = 37
-	} else if action == "A" {
-		action_type_code = 38
-	} else if action == "D" {
-		action_type_code = 39
-	}
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("Scheme Master Page", "UpdateSubCategoryHandler", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 
-	success, message, err = services.UpdateSubCategory(subcategory, action, actionLogID)
+	success, message, err = services.UpdateSubCategory(subcategory, action, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV("Scheme Master Page", "UpdateSubCategoryHandler", err.Error())
@@ -700,7 +611,7 @@ func UpdateTechnologyHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -720,9 +631,6 @@ func UpdateTechnologyHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 3
 
 	var technology models.TechnologyModel
 
@@ -739,30 +647,11 @@ func UpdateTechnologyHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	action := technology.Action
-	fmt.Println("called action" + action)
-	fmt.Println("called scheme", technology.TechnologyID)
 
-	if action == "S" {
-		action_type_code = 40
-	} else if action == "U" {
-		action_type_code = 41
-	} else if action == "R" {
-		action_type_code = 42
-	} else if action == "A" {
-		action_type_code = 43
-	} else if action == "D" {
-		action_type_code = 44
-	}
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("Scheme Master Page", "UpdateTechnologyHandler", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 
-	success, message, err = services.UpdateTechnology(technology, action, actionLogID)
+	success, message, err = services.UpdateTechnology(technology, action, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV("Scheme Master Page", "UpdateTechnologyHandler", err.Error())
@@ -817,7 +706,7 @@ func UpdateDocumentHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -837,9 +726,6 @@ func UpdateDocumentHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 3
 
 	var document models.DocumentModel
 
@@ -856,30 +742,11 @@ func UpdateDocumentHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	action := document.Action
-	fmt.Println("called action" + action)
-	fmt.Println("called document", document.DocumentID)
 
-	if action == "S" {
-		action_type_code = 45
-	} else if action == "U" {
-		action_type_code = 46
-	} else if action == "R" {
-		action_type_code = 47
-	} else if action == "A" {
-		action_type_code = 48
-	} else if action == "D" {
-		action_type_code = 49
-	}
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("Scheme Master Page", "UpdateDocumentHandler", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 
-	success, message, err = services.UpdateDocuments(document, action, actionLogID)
+	success, message, err = services.UpdateDocuments(document, action, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV("Scheme Master Page", "UpdateDocumentHandler", err.Error())
@@ -934,7 +801,7 @@ func UpdateVendorHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -954,9 +821,6 @@ func UpdateVendorHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 3
 
 	var vendors models.VendorModel
 
@@ -973,30 +837,11 @@ func UpdateVendorHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	action := vendors.Action
-	fmt.Println("called action" + action)
-	fmt.Println("called vendors", vendors.VendorID)
 
-	if action == "S" {
-		action_type_code = 50
-	} else if action == "U" {
-		action_type_code = 51
-	} else if action == "R" {
-		action_type_code = 52
-	} else if action == "A" {
-		action_type_code = 53
-	} else if action == "D" {
-		action_type_code = 54
-	}
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("Scheme Master Page", "UpdateVendorHandler", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 
-	success, message, err = services.UpdateVendors(vendors, action, actionLogID)
+	success, message, err = services.UpdateVendors(vendors, action, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV("Scheme Master Page", "UpdateVendorHandler", err.Error())

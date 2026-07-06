@@ -59,16 +59,6 @@ export default function InspectionConfiguration() {
     checklist,
   });
 
-  const handleSaveDraft = () => {
-    console.log("Draft saved:", buildPayload());
-    alert("Draft saved. Check console for JSON payload.");
-  };
-
-  const handlePublish = () => {
-    console.log("Scheme published:", buildPayload());
-    alert("Scheme published. Check console for JSON payload.");
-  };
-
   return (
         <div>
           <div className="config-header">
@@ -176,14 +166,6 @@ export default function InspectionConfiguration() {
               </div>
             </>
           )}
-          <div className="text-end border-top pt-3 mt-3">
-            <button type="button" className="text-white btn btn-warning" onClick={handleSaveDraft}>
-              Save Draft
-            </button> &nbsp;
-            <button type="button" className="btn btn-success" onClick={handlePublish}>
-              Publish Scheme
-            </button>
-        </div>
       </div>
   );
 }

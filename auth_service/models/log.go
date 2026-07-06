@@ -17,5 +17,5 @@ type FailedLoginRequest struct {
 	MacAddress  string `json:"mac_address"`
 	MachineID   string `json:"machine_id"`
 	SessionID   string `json:"session_id"`
-	ActionLogID int64  `json:"actionLogID"`
+	ActionLogID int    `json:"actionLogID"`
 }

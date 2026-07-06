@@ -573,3 +573,35 @@
 2026-06-30 17:43:14,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
 2026-06-30 17:43:14,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
 2026-06-30 17:43:14,Scheme Master Page,GetVendorListHandler,"sql: expected 10 destination arguments in Scan, not 11"
+2026-07-03 13:19:53,Employee Page,GetEmployeeListHandler,"pq: relation ""m_designation"" does not exist (42P01)"
+2026-07-03 13:19:53,Employee Page,GetEmployeeListHandler,"pq: relation ""m_designation"" does not exist (42P01)"
+2026-07-03 13:19:55,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 13:19:55,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 13:20:00,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 13:20:00,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 13:20:02,Employee Page,GetEmployeeListHandler,"pq: relation ""m_designation"" does not exist (42P01)"
+2026-07-03 13:20:02,Employee Page,GetEmployeeListHandler,"pq: relation ""m_designation"" does not exist (42P01)"
+2026-07-03 13:21:01,Employee Page,SaveUpdateEmployee,"pq: relation ""master.m_user_login"" does not exist (42P01)"
+2026-07-03 13:21:04,Employee Page,SaveUpdateEmployee,"pq: relation ""master.m_user_login"" does not exist (42P01)"
+2026-07-03 13:21:06,Employee Page,SaveUpdateEmployee,"pq: relation ""master.m_user_login"" does not exist (42P01)"
+2026-07-03 13:21:11,Employee Page,SaveUpdateEmployee,"pq: relation ""master.m_user_login"" does not exist (42P01)"
+2026-07-03 13:22:04,Employee Page,SaveUpdateEmployee,"pq: relation ""master.m_user_login"" does not exist (42P01)"
+2026-07-03 13:22:31,Employee Page,SaveUpdateEmployee,"pq: relation ""master.m_user_login"" does not exist (42P01)"
+2026-07-03 13:30:14,Employee Page,SaveUpdateEmployee,"pq: insert or update on table ""m_user_login"" violates foreign key constraint ""fk_user_role"" (23503)"
+2026-07-03 13:32:32,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 13:32:32,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 15:22:57,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 15:22:57,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 17:38:26,Office Page,SaveUpdateOffice,pq: got 20 parameters but the statement requires 19
+2026-07-03 17:48:05,Employee Page,SaveUpdateEmployee,"pq: column ""p_action_log_id"" does not exist (42703)"
+2026-07-03 17:59:30,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 17:59:30,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 17:59:32,User Management Page,UpdateUserHandler,"pq: function public.f_update_userdetail(unknown, unknown, unknown, unknown, unknown, unknown) does not exist at column 30 (42883)"
+2026-07-03 17:59:34,User Management Page,UpdateUserHandler,"pq: function public.f_update_userdetail(unknown, unknown, unknown, unknown, unknown, unknown) does not exist at column 30 (42883)"
+2026-07-03 18:00:22,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-03 18:00:22,User Management Page,GetRolesHandler,pq: function public.f_get_role() does not exist at column 16 (42883)
+2026-07-06 12:05:51,Scheme Master Page,UpdateSubCategoryHandler,"pq: function master.f_insertupdate_schemesubcategory(unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown) does not exist at column 30 (42883)"
+2026-07-06 12:05:57,Scheme Master Page,UpdateTechnologyHandler,"pq: function master.f_insertupdate_technology(unknown, unknown, unknown, unknown, unknown, unknown, unknown) does not exist at column 30 (42883)"
+2026-07-06 12:06:02,Scheme Master Page,UpdateDocumentHandler,"pq: function master.f_insertupdate_documents(unknown, unknown, unknown, unknown, unknown, unknown, unknown) does not exist at column 30 (42883)"
+2026-07-06 12:06:06,Scheme Master Page,UpdateVendorHandler,"pq: function master.f_insertupdate_vendor(unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown) does not exist at column 30 (42883)"
+2026-07-06 12:09:59,Scheme Master Page,UpdateSubCategoryHandler,"pq: relation ""scheme.m_scheme_subcategory"" does not exist (42P01)"

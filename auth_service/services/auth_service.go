@@ -1,16 +1,29 @@
 package services
 
 import (
+	"authapi/config"
 	"authapi/models"
 	"authapi/repositories"
 )
 
-func LogFailedLogin(req models.FailedLoginRequest) (int, error) {
-	return repositories.LogFailedLogin(req)
+func GetAllUsers() ([]models.User, error) {
+	return repositories.GetUsers()
 }
-func UserDayLockUpdate(req models.FailedLoginRequest) error {
-	return repositories.UpdateUserDayLock(req)
+func InsertUser(user models.User) error {
+
+	query := `INSERT INTO public.m_user_login (user_id, emp_code, password) VALUES ($1, $2, $3)`
+
+	_, err := config.DB.Exec(query, user.UserName, user.EmpCode, user.Password)
+	return err
 }
-func InsertActionLog(req models.ActionLog) (int, error) {
-	return repositories.InsertActionLog(req)
+func Logout(username string, actionLogID int) error {
+
+	var success bool
+	err := config.DB.QueryRow(`SELECT public.f_logout_user($1, $2)`, username, actionLogID).Scan(&success)
+
+	if err != nil {
+		return err
+	}
+
+	return nil
 }

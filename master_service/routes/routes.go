@@ -4,19 +4,9 @@ import (
 	"net/http"
 	"userapi/controllers"
 	"userapi/utils"
-	//"github.com/gorilla/mux"
 )
 
 func RegisterRoutes() {
-
-	http.HandleFunc("/users", utils.SessionAuth(controllers.GetUsers))
-	http.HandleFunc("/user/create", utils.SessionAuth(controllers.CreateUser))
-	//http.HandleFunc("/user/delete", utils.SessionAuth(controllers.DeleteUser))
-	http.HandleFunc("/user/login", controllers.LoginUserHandler)
-	http.HandleFunc("/user/logout", controllers.LogoutUserHandler)
-	http.HandleFunc("/auth/login-salt", controllers.GetLoginSalt)
-	http.HandleFunc("/auth/captcha", controllers.GetCaptcha)
-	http.HandleFunc("/api/translations", controllers.GetTranslations)
 
 	http.HandleFunc("/user/get-officelevel", utils.SessionAuth(controllers.GetOfficeLevels))
 	http.HandleFunc("/user/get-office", utils.SessionAuth(controllers.GetOffices))
@@ -35,18 +25,19 @@ func RegisterRoutes() {
 	http.HandleFunc("/user/get-userslist", utils.SessionAuth(controllers.GetUsersListHandler))
 	http.HandleFunc("/user/updateuser", utils.SessionAuth(controllers.UpdateUserHandler))
 
-	http.HandleFunc("/scheme/get-mastersummary", utils.SessionAuth(controllers.GetMasterSummaryListHandler))
-	http.HandleFunc("/scheme/get-applicanttype", utils.SessionAuth(controllers.GetApplicantTypeListHandler))
-	http.HandleFunc("/scheme/get-units", utils.SessionAuth(controllers.GetMeasuringUnitListHandler))
-	http.HandleFunc("/scheme/get-sectors", utils.SessionAuth(controllers.GetSectorListHandler))
-	http.HandleFunc("/scheme/get-documenttype", utils.SessionAuth(controllers.GetDocumentTypeListHandler))
-	http.HandleFunc("/scheme/get-documents", utils.SessionAuth(controllers.GetDocumentListHandler))
-	http.HandleFunc("/scheme/get-schemetype", utils.SessionAuth(controllers.GetSchemeTypeListHandler))
-	http.HandleFunc("/scheme/get-subsidytype", utils.SessionAuth(controllers.GetSubsidyTypeListHandler))
-	http.HandleFunc("/scheme/get-category", utils.SessionAuth(controllers.GetCategoryListHandler))
-	http.HandleFunc("/scheme/get-subcategory", utils.SessionAuth(controllers.GetSubCategoryListHandler))
-	http.HandleFunc("/scheme/get-technology", utils.SessionAuth(controllers.GetTechnologyListHandler))
-	http.HandleFunc("/scheme/get-vendors", utils.SessionAuth(controllers.GetVendorListHandler))
+	http.HandleFunc("/scheme/get-mastersummary", controllers.GetMasterSummaryListHandler)
+	http.HandleFunc("/scheme/get-applicanttype", controllers.GetApplicantTypeListHandler)
+	http.HandleFunc("/scheme/get-units", controllers.GetMeasuringUnitListHandler)
+	http.HandleFunc("/scheme/get-sectors", controllers.GetSectorListHandler)
+	http.HandleFunc("/scheme/get-documenttype", controllers.GetDocumentTypeListHandler)
+	http.HandleFunc("/scheme/get-documents", controllers.GetDocumentListHandler)
+	http.HandleFunc("/scheme/get-schemetype", controllers.GetSchemeTypeListHandler)
+	http.HandleFunc("/scheme/get-subsidytype", controllers.GetSubsidyTypeListHandler)
+	http.HandleFunc("/scheme/get-category", controllers.GetCategoryListHandler)
+	http.HandleFunc("/scheme/get-subcategory", controllers.GetSubCategoryListHandler)
+	http.HandleFunc("/scheme/get-technology", controllers.GetTechnologyListHandler)
+	http.HandleFunc("/scheme/get-vendors", controllers.GetVendorListHandler)
+
 	http.HandleFunc("/scheme/update-schemetype", utils.SessionAuth(controllers.UpdateSchemeTypeHandler))
 	http.HandleFunc("/scheme/update-subsidytype", utils.SessionAuth(controllers.UpdateSubsidyTypeHandler))
 	http.HandleFunc("/scheme/update-category", utils.SessionAuth(controllers.UpdateCategoryHandler))

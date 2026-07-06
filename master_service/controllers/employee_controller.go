@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"log"
 	"net/http"
 	"regexp"
 	"strings"
@@ -82,7 +81,7 @@ func SaveUpdateEmployeeHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -102,9 +101,6 @@ func SaveUpdateEmployeeHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 3
 
 	var employeeDetail models.EmployeePersonalModel
 
@@ -136,32 +132,10 @@ func SaveUpdateEmployeeHandler(w http.ResponseWriter, r *http.Request) {
 	action := employeeDetail.Action
 	status := employeeDetail.Status
 
-	switch action {
-	case "S":
-		action_type_code = 9
-	case "U":
-		action_type_code = 10
-	case "R":
-		action_type_code = 11
-	case "A":
-		action_type_code = 12
-	case "D":
-		action_type_code = 13
-	case "V":
-		action_type_code = 14
-	case "O":
-		action_type_code = 19
-	}
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("Employee Page", "SaveUpdateEmployee Action Log Error", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 	// Call service to insert user
-	success, message, err = services.InsertUpdateEmployee(employeeDetail, action, status, actionLogID)
+	success, message, err = services.InsertUpdateEmployee(employeeDetail, action, status, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV(

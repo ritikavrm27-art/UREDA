@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import "./configuration.css";
 
 /* ------------------------------------------------------------------ */
@@ -20,7 +20,6 @@ function makeDefaultCategory(key) {
     slabs: [{ id: uid(), from: "", to: "", rate: "" }],
   };
 }
-
 /* ------------------------------------------------------------------ */
 /* Sub-components                                                       */
 /* ------------------------------------------------------------------ */
@@ -56,7 +55,7 @@ function SlabRow({ slab, onChange, onRemove, disableRemove }) {
         disabled={disableRemove}
         title="Remove slab"
       >
-        🗑
+        <i className="fa fa-trash"></i>
       </button>
     </div>
   );
@@ -172,7 +171,15 @@ function CategoryPanel({ label, panelClass, dotClass, category, onUpdate }) {
 
 function CommonFields({ common, onChange }) {
   const update = (field, value) => onChange({ ...common, [field]: value });
-
+  const safeCommon = {
+    maxSubsidyCap: "",
+    eligibilityDependency: "pass",
+    disbursementMode: "dbt",
+    incomeThreshold: "",
+    minUsageThreshold: "",
+    amountThreshold: "",
+    ...common
+  };
   return (
     <div className="field-grid">
       <div className="form-group">
@@ -181,7 +188,7 @@ function CommonFields({ common, onChange }) {
           type="text"
           className="form-control form-control-sm"
           placeholder="78000"
-          value={common.maxSubsidyCap}
+          value={safeCommon.maxSubsidyCap}
           onChange={(e) => update("maxSubsidyCap", e.target.value)}
         />
       </div>
@@ -189,7 +196,7 @@ function CommonFields({ common, onChange }) {
         <span className="form-label col-form-label col-form-label-sm">Eligibility Dependency</span>
         <select
           className="selectpicker form-select form-select-sm"
-          value={common.eligibilityDependency}
+          value={safeCommon.eligibilityDependency}
           onChange={(e) => update("eligibilityDependency", e.target.value)}
         >
           <option value="pass">Inspection Status: Passed</option>
@@ -202,7 +209,7 @@ function CommonFields({ common, onChange }) {
         <span className="form-label col-form-label col-form-label-sm">Disbursement Mode</span>
         <select
           className="selectpicker form-select form-select-sm"
-          value={common.disbursementMode}
+          value={safeCommon.disbursementMode}
           onChange={(e) => update("disbursementMode", e.target.value)}
         >
           <option value="dbt">DBT (Direct Benefit Transfer)</option>
@@ -216,7 +223,7 @@ function CommonFields({ common, onChange }) {
           type="text"
           className="form-control form-control-sm"
           placeholder="e.g. < 5 lac"
-          value={common.incomeThreshold}
+          value={safeCommon.incomeThreshold}
           onChange={(e) => update("incomeThreshold", e.target.value)}
         />
       </div>
@@ -227,7 +234,7 @@ function CommonFields({ common, onChange }) {
           type="text"
           className="form-control form-control-sm"
           placeholder="e.g. 100 units/month"
-          value={common.minUsageThreshold}
+          value={safeCommon.minUsageThreshold}
           onChange={(e) => update("minUsageThreshold", e.target.value)}
         />
       </div>
@@ -237,7 +244,7 @@ function CommonFields({ common, onChange }) {
           type="text"
           className="form-control form-control-sm"
           placeholder="e.g. 50000"
-          value={common.amountThreshold}
+          value={safeCommon.amountThreshold}
           onChange={(e) => update("amountThreshold", e.target.value)}
         />
       </div>
@@ -249,24 +256,18 @@ function CommonFields({ common, onChange }) {
 /* Main component                                                       */
 /* ------------------------------------------------------------------ */
 
-export default function SubsidyConfiguration() {
-  const [systemType, setSystemType] = useState("capacity"); // 'capacity' | 'unit'
-
-  const [domestic, setDomestic] = useState(makeDefaultCategory("domestic"));
-  const [commercial, setCommercial] = useState(makeDefaultCategory("commercial"));
-  const [numberOfUnits, setNumberOfUnits] = useState("");
-
-  const [common, setCommon] = useState({
-    maxSubsidyCap: "78000",
-    eligibilityDependency: "pass",
-    disbursementMode: "dbt",
-    incomeThreshold: "",
-    minUsageThreshold: "",
-    amountThreshold: "",
-  });
-
+export default function SubsidyConfiguration({ data = {}, onChange }) {
+  const update = (field, value) => {
+    onChange({
+      ...data,
+      [field]: value
+    });
+  };
+  const systemType = data.systemType || "capacity";
   const copyDomesticToCommercial = () => {
-    setCommercial({
+    const domestic = data.domestic || makeDefaultCategory("domestic");
+
+    update("commercial", {
       ...domestic,
       key: "commercial",
       slabs: domestic.slabs.map((s) => ({ ...s, id: uid() })),
@@ -274,21 +275,13 @@ export default function SubsidyConfiguration() {
   };
 
   const copyCommercialToDomestic = () => {
-    setDomestic({
+    const commercial = data.commercial || makeDefaultCategory("commercial");
+
+    update("domestic", {
       ...commercial,
       key: "domestic",
       slabs: commercial.slabs.map((s) => ({ ...s, id: uid() })),
     });
-  };
-
-  const handleSubmit = () => {
-    const payload = {
-      systemType,
-      ...(systemType === "capacity" ? { domestic, commercial } : { numberOfUnits }),
-      ...common,
-    };
-    console.log("Subsidy configuration payload:", payload);
-    alert("Configuration saved. Check console for JSON payload.");
   };
 
   return (
@@ -303,8 +296,8 @@ export default function SubsidyConfiguration() {
           <span className="section-label">SYSTEM TYPE</span>
           <div className="system-type-row">
             <div
-              className={`system-type-option ${systemType === "capacity" ? "active" : ""}`}
-              onClick={() => setSystemType("capacity")}
+              className={`system-type-option ${data.systemType === "capacity" ? "active" : ""}`}
+              onClick={() => update("systemType", "capacity")}
             >
               <span className="radio-dot">
                 <span className="inner-dot"></span>
@@ -316,8 +309,8 @@ export default function SubsidyConfiguration() {
             </div>
 
             <div
-              className={`system-type-option ${systemType === "unit" ? "active" : ""}`}
-              onClick={() => setSystemType("unit")}
+              className={`system-type-option ${data.systemType === "unit" ? "active" : ""}`}
+              onClick={() => update("systemType", "unit")}
             >
               <span className="radio-dot">
                 <span className="inner-dot"></span>
@@ -329,7 +322,7 @@ export default function SubsidyConfiguration() {
             </div>
           </div>
 
-          {systemType === "capacity" ? (
+          {data.systemType === "capacity" ? (
             <>
               <div className="copy-btn-row py-2">
                 <button type="button" className="btn-copy" onClick={copyDomesticToCommercial}>
@@ -343,28 +336,25 @@ export default function SubsidyConfiguration() {
               <>
               <div className="row">
                   <div className="col-md-6 mb-3">
-                    <CategoryPanel label="Domestic"
-                      panelClass="panel-domestic"
-                      dotClass="dot-pink"
-                      category={domestic}
-                      onUpdate={setDomestic}
+                    <CategoryPanel
+                      label="Domestic"
+                      category={data.domestic || makeDefaultCategory("domestic")}
+                      onUpdate={(val) => update("domestic", val)}
                     />
                   </div>
 
                   <div className="col-md-6 mb-3">
                     <CategoryPanel
                       label="Commercial"
-                      panelClass="panel-commercial"
-                      dotClass="dot-purple"
-                      category={commercial}
-                      onUpdate={setCommercial}
+                      category={data.commercial || makeDefaultCategory("commercial")}
+                      onUpdate={(val) => update("commercial", val)}
                     />
                   </div>
                 </div>
 
                 <div className="row mt-3">
                   <div className="col-12">
-                    <CommonFields common={common} onChange={setCommon} />
+                    <CommonFields common={data.common} onChange={(value) => update("common", value)} />
                   </div>
               </div>
             </>
@@ -377,12 +367,12 @@ export default function SubsidyConfiguration() {
                   type="text"
                   className="form-control form-control-sm"
                   placeholder="e.g. 50"
-                  value={numberOfUnits}
-                  onChange={(e) => setNumberOfUnits(e.target.value)}
+                  value={data.numberOfUnits}
+                  onChange={(e) => update("numberOfUnits", e.target.value)}
                 />
               </div>
               <div className="unit-common">
-                <CommonFields common={common} onChange={setCommon} />
+                <CommonFields common={data.common} onChange={(value) => update("common", value)} />
               </div>
             </div>
           )}

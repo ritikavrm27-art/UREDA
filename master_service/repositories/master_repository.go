@@ -7,7 +7,7 @@ import (
 
 func GetOfficeLevels() ([]models.OfficeLevelModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from public.f_get_office_level()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_office_level()")
 
 	if err != nil {
 		return nil, err
@@ -35,7 +35,7 @@ func GetOfficeLevels() ([]models.OfficeLevelModel, error) {
 }
 func GetOffices(OfficeLevelID int) ([]models.OfficeModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from public.f_get_officedropdown($1)", OfficeLevelID)
+	rows, err := config.DB.Query("SELECT  * from master.f_get_officedropdown($1)", OfficeLevelID)
 
 	if err != nil {
 		return nil, err
@@ -63,7 +63,7 @@ func GetOffices(OfficeLevelID int) ([]models.OfficeModel, error) {
 }
 func GetReportingOffice(OfficeLevelID int) ([]models.OfficeModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from public.f_get_reportingoffice($1)", OfficeLevelID)
+	rows, err := config.DB.Query("SELECT  * from master.f_get_reportingoffice($1)", OfficeLevelID)
 
 	if err != nil {
 		return nil, err
@@ -91,7 +91,7 @@ func GetReportingOffice(OfficeLevelID int) ([]models.OfficeModel, error) {
 }
 func GetDropdownOffice(OfficeLevelID int) ([]models.OfficeModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from public.f_get_dropdownoffice($1)", OfficeLevelID)
+	rows, err := config.DB.Query("SELECT  * from master.f_get_dropdownoffice($1)", OfficeLevelID)
 
 	if err != nil {
 		return nil, err
@@ -119,7 +119,7 @@ func GetDropdownOffice(OfficeLevelID int) ([]models.OfficeModel, error) {
 }
 func GetStates() ([]models.StatesModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from public.f_get_state()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_state()")
 
 	if err != nil {
 		return nil, err
@@ -147,7 +147,7 @@ func GetStates() ([]models.StatesModel, error) {
 }
 func GetDistrict(StateID int) ([]models.DistrictModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from public.f_get_district_bystate($1)", StateID)
+	rows, err := config.DB.Query("SELECT  * from master.f_get_district_bystate($1)", StateID)
 
 	if err != nil {
 		return nil, err
@@ -177,7 +177,7 @@ func GetOfficeList(OfficeLevelID int, OfficeID string) ([]models.OfficeModel, er
 
 	rows, err := config.DB.Query(`SELECT office_id, office_name, office_name_local, office_level_id, office_level_name, COALESCE(address, ''),
     COALESCE(state_id, 0), COALESCE(district_id, 0), COALESCE(mobile, ''), COALESCE(email, ''), COALESCE(nodel_name, ''), COALESCE(nodel_mobile, ''), COALESCE(nodel_email, ''),
-    COALESCE(status, ''), COALESCE(reporting_office_id, ''),tot_office,tot_hq,tot_regionalofc,tot_distofc FROM public.f_get_office($1,$2)`, OfficeLevelID, OfficeID)
+    COALESCE(status, ''), COALESCE(reporting_office_id, ''),tot_office,tot_hq,tot_regionalofc,tot_distofc FROM master.f_get_office($1,$2)`, OfficeLevelID, OfficeID)
 
 	if err != nil {
 		return nil, err

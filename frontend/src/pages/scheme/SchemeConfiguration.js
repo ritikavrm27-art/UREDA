@@ -9,6 +9,7 @@ import EligibilityLocation from "./Configuration/EligibilityLocation";
 import DocumentsRequired from "./Configuration/DocumentsRequired";
 import MessageModal from "../../components/MessageModal";
 import axiosApi from "../../utils/axiosApi";
+import "./Configuration/configuration.css";
 import * as bootstrap from "bootstrap";
 
 const configurationInstructions = [
@@ -37,6 +38,21 @@ function SchemeConfiguration({ setModuleName }) {
    const [messageModal, setMessageModal] = useState({ show: false, title: "", message: "", type: "success",isConfirmation: false, onConfirm: null,});
    const [currentStep, setCurrentStep] = useState(0);
    const [completedSteps, setCompletedSteps] = useState([]);
+   const [formData, setFormData] = useState({ 
+    basic: {}, 
+    eligibility: {
+      minAreaRequired: false,
+      applicationFeeRequired: true,
+      applicationFee: "",
+      applicantTypes: ["Individual", "Industry", "Organization"],
+      landOwnership: "self",
+      location: "both",
+      applicableRegion: "entire_state",
+    },
+    documents: {}, 
+    subsidy: {}, 
+    inspection: {} 
+  });
 
    const showMessage = ( title, message, type = "success", isConfirmation = false, onConfirm = null ) => {
                            setMessageModal({ show: true, title, message, type,isConfirmation, onConfirm });};
@@ -81,7 +97,23 @@ function SchemeConfiguration({ setModuleName }) {
    };
 
    const ActiveComponent = steps[currentStep].Component;
+   const updateStepData = (stepKey, data) => {
+      setFormData((prev) => ({
+        ...prev,
+        [stepKey]: {
+          ...prev[stepKey],
+          ...data
+        }
+      }));
+    };
 
+  const handleSaveDraft = () => {
+    alert("Draft saved. Check console for JSON payload.");
+  };
+
+  const handlePublish = () => {
+    alert("Scheme published. Check console for JSON payload.");
+  };
 return (
 
       <div className="container-fluid content-inner mt-n5 px-3 py-0">
@@ -130,27 +162,42 @@ return (
                      );
                   })}
                 </div>
-                <ActiveComponent />
-                <div className="d-flex justify-content-between mt-3 mb-4">
-                {!isFirstStep && (
-                  <button type="button" className="btn btn-outline-secondary px-4" onClick={handleBack}> 
-                    <i class="fa fa-arrow-left"></i> Back
-                  </button>
-                  )}
-                  {!isLastStep && (
-                  <button type="button" className="btn btn-primary px-4 ms-auto" onClick={handleNext}>
-                      Next <i class="fa fa-arrow-right"></i> 
-                    </button>
-                  )}
-                </div>
+                <ActiveComponent
+                  data={formData[steps[currentStep].key]}
+                  onChange={(data) => updateStepData(steps[currentStep].key, data)} />                
+                  
+                  <div className="d-flex justify-content-between align-items-center mt-3 mb-4 border-top pt-3">
+                    <div>
+                      {!isFirstStep && (
+                        <button type="button" className="btn btn-outline-secondary px-4" onClick={handleBack} >
+                          <i className="fa fa-arrow-left"></i> Back
+                        </button>
+                      )}
+                    </div>
+                    <div className="d-flex gap-2">
+                      <button type="button" className="btn btn-warning text-white" onClick={handleSaveDraft} >
+                        <i className="fa fa-check"></i> Save Draft
+                      </button>
+                      <button type="button" className="btn btn-danger" >
+                        <i className="fa fa-times"></i> Cancel
+                      </button>
+
+                      {isLastStep && (
+                        <button type="button" className="btn btn-primary" onClick={handlePublish} >
+                          <i className="fa fa-check"></i> Publish Scheme
+                        </button>
+                      )}
+
+                      {!isLastStep && (
+                        <button type="button" className="btn btn-primary px-4" onClick={handleNext} >
+                          Next <i className="fa fa-arrow-right"></i>
+                        </button>
+                      )}
+
+                    </div>
+                  </div>
               </div>
             </div>
-
-            {/* Active step content */}
-
-            {/* Wizard navigation */}
-            
-
           </div>
         </div>
         <MessageModal show={messageModal.show} title={messageModal.title} message={messageModal.message} type={messageModal.type}

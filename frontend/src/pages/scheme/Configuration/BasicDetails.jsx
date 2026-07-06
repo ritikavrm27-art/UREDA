@@ -1,25 +1,15 @@
-import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import "./configuration.css";
 
 const SECTORS = ["Domestic", "Commercial", "Both"];
 
-export default function BasicDetails() {
-  const [schemeName, setSchemeName] = useState("");
-  const [category, setCategory] = useState("solar");
-  const [subcategory, setSubcategory] = useState("grid_rooftop");
-  const [measuringUnit, setMeasuringUnit] = useState("kW");
-  const [technology, setTechnology] = useState("Solar PV");
-  const [schemeType, setSchemeType] = useState("subsidy");
-  const [status, setStatus] = useState("active");
-  const [startDate, setStartDate] = useState("2025-04-01");
-  const [endDate, setEndDate] = useState("2030-03-31");
-  const [sector, setSector] = useState("Both");
-  const [description, setDescription] = useState("");
-  const [brochure, setBrochure] = useState(null);
-  const [image, setImage] = useState(null);
-  const [terms, setTerms] = useState("");
+export default function BasicDetails({ data = {}, onChange }) {
+  const update = (field, value) => {
+    onChange({
+      ...data,
+      [field]: value
+    });
+  };
 
   return (
      <div className="">
@@ -36,15 +26,15 @@ export default function BasicDetails() {
               type="text"
               className="form-control form-control-sm"
               placeholder="e.g. PM Surya Ghar Muft Bijli Yojana"
-              value={schemeName}
-              onChange={(e) => setSchemeName(e.target.value)}
+              value={data.schemeName}
+              onChange={(e) => update("schemeName", e.target.value)}
             />
           </div>
 
           <div className="field-grid">
             <div className="form-group">
               <label className="form-label col-form-label col-form-label-sm">Category</label>
-              <select className="selectpicker form-select form-select-sm" value={category} onChange={(e) => setCategory(e.target.value)}>
+              <select className="selectpicker form-select form-select-sm" value={data.category} onChange={(e) => update("category", e.target.value)}>
                 <option value="solar">Solar</option>
                 <option value="wind">Wind</option>
                 <option value="hybrid">Hybrid</option>
@@ -52,7 +42,7 @@ export default function BasicDetails() {
             </div>
             <div className="form-group">
               <label className="form-label col-form-label col-form-label-sm">Subcategory</label>
-              <select className="selectpicker form-select form-select-sm" value={subcategory} onChange={(e) => setSubcategory(e.target.value)}>
+              <select className="selectpicker form-select form-select-sm" value={data.subcategory} onChange={(e) => update("subcategory", e.target.value)}>
                 <option value="grid_rooftop">Grid Connected Rooftop Solar</option>
                 <option value="off_grid">Off Grid Solar</option>
                 <option value="ground_mounted">Ground Mounted Solar</option>
@@ -60,7 +50,7 @@ export default function BasicDetails() {
             </div>
             <div className="form-group">
               <label className="form-label col-form-label col-form-label-sm">Measuring Unit</label>
-              <select className="selectpicker form-select form-select-sm" value={measuringUnit} onChange={(e) => setMeasuringUnit(e.target.value)}>
+              <select className="selectpicker form-select form-select-sm" value={data.measuringUnit} onChange={(e) => update("measuringUnit", e.target.value)}>
                 <option value="kwh">Kilowatt-hour (kWh)</option>
                 <option value="mw">Megawatt (MW)</option>
                 <option value="kw">Kilowatt (kW)</option>
@@ -68,7 +58,7 @@ export default function BasicDetails() {
             </div>
             <div className="form-group">
               <label className="form-label col-form-label col-form-label-sm">Technology</label>
-              <select className="selectpicker form-select form-select-sm" value={technology} onChange={(e) => setTechnology(e.target.value)}>
+              <select className="selectpicker form-select form-select-sm" value={data.technology} onChange={(e) => update("technology", e.target.value)}>
                 <option value="solar">Solar</option>
                 <option value="wind">Wind</option>
                 <option value="hybrid">Hybrid</option>
@@ -77,7 +67,7 @@ export default function BasicDetails() {
 
             <div className="form-group">
               <label className="form-label col-form-label col-form-label-sm">Scheme Type</label>
-              <select className="selectpicker form-select form-select-sm" value={schemeType} onChange={(e) => setSchemeType(e.target.value)}>
+              <select className="selectpicker form-select form-select-sm" value={data.schemeType} onChange={(e) => update("schemeType", e.target.value)}>
                 <option value="subsidy">Subsidy</option>
                 <option value="loan">Loan</option>
                 <option value="rebate">Rebate</option>
@@ -85,7 +75,7 @@ export default function BasicDetails() {
             </div>
             <div className="form-group">
               <label className="form-label col-form-label col-form-label-sm">Status</label>
-              <select className="selectpicker form-select form-select-sm" value={status} onChange={(e) => setStatus(e.target.value)}>
+              <select className="selectpicker form-select form-select-sm" value={data.status} onChange={(e) => update("status", e.target.value)}>
                 <option value="active">Active</option>
                 <option value="inactive">Inactive</option>
                 <option value="draft">Draft</option>
@@ -95,7 +85,7 @@ export default function BasicDetails() {
             <div className="form-group">
               <label className="form-label col-form-label col-form-label-sm">Start Date</label>
               <div className="input-group">
-                <DatePicker onChange={(e) => setStartDate(e.target.value)} className="form-control form-control-sm w-100"
+                <DatePicker onChange={(e) => update("startDate", e.target.value)} className="form-control form-control-sm w-100"
                     dateFormat="dd/MM/yyyy" showMonthDropdown showYearDropdown dropdownMode="select" placeholderText="DD/MM/YYYY" />
                 <span className="input-group-text"> <i className="fa fa-calendar"></i> </span>
               </div>
@@ -103,7 +93,7 @@ export default function BasicDetails() {
             <div className="form-group">
               <label className="form-label col-form-label col-form-label-sm">End Date</label>
               <div className="input-group">
-                <DatePicker onChange={(e) => setEndDate(e.target.value)} className="form-control form-control-sm w-100"
+                <DatePicker onChange={(e) => update("endDate", e.target.value)} className="form-control form-control-sm w-100"
                     dateFormat="dd/MM/yyyy" showMonthDropdown showYearDropdown dropdownMode="select" placeholderText="DD/MM/YYYY" />
                 <span className="input-group-text"> <i className="fa fa-calendar"></i> </span>
               </div>
@@ -113,7 +103,7 @@ export default function BasicDetails() {
             <label className="form-label col-form-label col-form-label-sm">Sector</label>
             <div className="pill-group">
               {SECTORS.map((s) => (
-                <button key={s} type="button" className={`pill ${sector === s ? "active" : ""}`} onClick={() => setSector(s)} >
+                <button key={s} type="button" className={`pill ${data.sector === s ? "active" : ""}`} onClick={() => update("sector", s)} >
                   {s}
                 </button>
               ))}
@@ -127,8 +117,8 @@ export default function BasicDetails() {
               className="form-control form-control-sm"
               placeholder="Brief about the scheme..."
               rows={3}
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
+              value={data.description}
+              onChange={(e) => update("description", e.target.value)}
             />
           </div>
 
@@ -139,7 +129,7 @@ export default function BasicDetails() {
                 type="file"
                 accept="application/pdf"
                 className="form-control form-control-sm"
-                onChange={(e) => setBrochure(e.target.files?.[0] || null)}
+                onChange={(e) => update("brochure", e.target.files?.[0] || null)}
               />
             </div>
             <div className="form-group">
@@ -148,7 +138,7 @@ export default function BasicDetails() {
                 type="file"
                 accept="image/*"
                 className="form-control form-control-sm"
-                onChange={(e) => setImage(e.target.files?.[0] || null)}
+                onChange={(e) => update("image", e.target.files?.[0] || null)}
               />
             </div>
           </div>
@@ -158,8 +148,8 @@ export default function BasicDetails() {
               className="form-control form-control-sm"
               placeholder="Enter terms..."
               rows={3}
-              value={terms}
-              onChange={(e) => setTerms(e.target.value)}
+              value={data.terms}
+              onChange={(e) => update("terms", e.target.value)}
             />
           </div>
       </div>

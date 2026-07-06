@@ -311,9 +311,9 @@
 }
 
 .slab-remove {
-  background: #fff5f5;
-  color: #e0455f;
-  border: 1.5px solid #ffe1e6;
+  background: #fff;
+  color: red;
+  border: 1.5px solid #f9657f;
   border-radius: 8px;
   width: 34px;
   height: 34px;

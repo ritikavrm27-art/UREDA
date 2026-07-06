@@ -1,15 +1,22 @@
 package controllers
 
 import (
+	"crypto/sha256"
+	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 	"userapi/models"
 	"userapi/services"
 	"userapi/utils"
 )
 
+func sha256Hex(text string) string {
+
+	hash := sha256.Sum256([]byte(text))
+
+	return hex.EncodeToString(hash[:])
+}
 func GetRolesHandler(w http.ResponseWriter, r *http.Request) {
 	enableCors(w, r)
 
@@ -80,7 +87,7 @@ func UpdateUserHandler(w http.ResponseWriter, r *http.Request) {
 		)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request method",
 			},
@@ -100,9 +107,6 @@ func UpdateUserHandler(w http.ResponseWriter, r *http.Request) {
 	var deviceID = ""
 	var latitude = ""
 	var longitude = ""
-	var action_mode = ""
-	var action_type_code = 0
-	var action_category_code = 3
 
 	var employeeDetail models.EmployeePersonalModel
 
@@ -120,29 +124,13 @@ func UpdateUserHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	action := employeeDetail.Action
 
-	switch action {
-	case "P":
-		action_type_code = 15
-	case "R":
-		action_type_code = 16
-	case "A":
-		action_type_code = 17
-	case "D":
-		action_type_code = 18
-	}
-
-	actionLogID, err := InsertActionLog(action_type_code, action_category_code, username, machineIP, deviceID, latitude, longitude, action_mode)
-	if err != nil {
-		utils.LogErrorToCSV("User Management Page", "UpdateUserHandler", err.Error())
-		log.Println("Action Log Error:", err)
-	}
 	var success bool
 	var message string
 	// Call service to insert user
 
 	shaPassword := sha256Hex(employeeDetail.UserPassword)
 
-	success, message, err = services.UpdateUser(employeeDetail, shaPassword, action, actionLogID)
+	success, message, err = services.UpdateUser(employeeDetail, shaPassword, action, username, machineIP, deviceID, latitude, longitude)
 	if err != nil {
 
 		utils.LogErrorToCSV("User Management Page", "UpdateUserHandler", err.Error())

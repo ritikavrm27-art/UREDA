@@ -7,7 +7,7 @@ import (
 
 func GetMasterSummaryList() ([]models.SchemeMasterSummaryModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_master_summary()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_master_summary()")
 
 	if err != nil {
 		return nil, err
@@ -35,7 +35,7 @@ func GetMasterSummaryList() ([]models.SchemeMasterSummaryModel, error) {
 }
 func GetApplicantTypeList() ([]models.ApplicantTypeModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_applicant_type()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_applicant_type()")
 
 	if err != nil {
 		return nil, err
@@ -63,7 +63,7 @@ func GetApplicantTypeList() ([]models.ApplicantTypeModel, error) {
 }
 func GetMeasuringUnitList() ([]models.MeasuringUnitModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_units()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_units()")
 
 	if err != nil {
 		return nil, err
@@ -91,7 +91,7 @@ func GetMeasuringUnitList() ([]models.MeasuringUnitModel, error) {
 }
 func GetSectorList() ([]models.SectorModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_sector()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_sector()")
 
 	if err != nil {
 		return nil, err
@@ -119,7 +119,7 @@ func GetSectorList() ([]models.SectorModel, error) {
 }
 func GetDocumentTypeList() ([]models.DocumentTypeModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_document_type()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_document_type()")
 
 	if err != nil {
 		return nil, err
@@ -147,7 +147,7 @@ func GetDocumentTypeList() ([]models.DocumentTypeModel, error) {
 }
 func GetDocumentList() ([]models.DocumentModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_document()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_document()")
 
 	if err != nil {
 		return nil, err
@@ -175,7 +175,7 @@ func GetDocumentList() ([]models.DocumentModel, error) {
 }
 func GetSchemeTypeList() ([]models.SchemeTypeModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_scheme_type()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_scheme_type()")
 
 	if err != nil {
 		return nil, err
@@ -203,7 +203,7 @@ func GetSchemeTypeList() ([]models.SchemeTypeModel, error) {
 }
 func GetSubsidyTypeList() ([]models.SubsidyTypeModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_subsidy_type()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_subsidy_type()")
 
 	if err != nil {
 		return nil, err
@@ -231,7 +231,7 @@ func GetSubsidyTypeList() ([]models.SubsidyTypeModel, error) {
 }
 func GetCategoryList() ([]models.SchemeCategoryModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_scheme_category()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_scheme_category()")
 
 	if err != nil {
 		return nil, err
@@ -259,7 +259,7 @@ func GetCategoryList() ([]models.SchemeCategoryModel, error) {
 }
 func GetSubCategoryList() ([]models.SchemeSubCategoryModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_scheme_subcategory()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_scheme_subcategory()")
 
 	if err != nil {
 		return nil, err
@@ -287,7 +287,7 @@ func GetSubCategoryList() ([]models.SchemeSubCategoryModel, error) {
 }
 func GetTechnologyList() ([]models.TechnologyModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_technology()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_technology()")
 
 	if err != nil {
 		return nil, err
@@ -315,7 +315,7 @@ func GetTechnologyList() ([]models.TechnologyModel, error) {
 }
 func GetVendorsList() ([]models.VendorModel, error) {
 
-	rows, err := config.DB.Query("SELECT  * from scheme.f_get_vendor()")
+	rows, err := config.DB.Query("SELECT  * from master.f_get_vendor()")
 
 	if err != nil {
 		return nil, err

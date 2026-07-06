@@ -28,13 +28,34 @@ func GetState() ([]models.StatesModel, error) {
 func GetDistrict(StateID int) ([]models.DistrictModel, error) {
 	return repositories.GetDistrict(StateID)
 }
-func InsertUpdateOffice(model models.OfficeModel, action string, status string, actionLogID int) (bool, string, error) {
+func InsertUpdateOffice(model models.OfficeModel, action string, status string, username string, machineIP string,
+	deviceID string, latitude string, longitude string) (bool, string, error) {
 	var success bool
 	var message string
 
-	err := config.DB.QueryRow(`select success, message from public.f_insertupdate_officedetail($1, $2, $3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)`,
-		action, model.OfficeID, model.OfficeName, model.OfficeNameLocal, model.OfficeLevelID, model.ReportingOfficeID, model.Address, model.StateID,
-		model.DistrictID, model.Mobile, model.Email, model.NodelName, model.NodelMobile, model.NodelEmail, status, actionLogID).Scan(&success, &message)
+	err := config.DB.QueryRow(` select success, message from master.f_insertupdate_officedetail( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,
+		$11,$12,$13,$14,$15,$16,$17,$18,$19,$20)`,
+		action,
+		model.OfficeID,
+		model.OfficeName,
+		model.OfficeNameLocal,
+		model.OfficeLevelID,
+		model.ReportingOfficeID,
+		model.Address,
+		model.StateID,
+		model.DistrictID,
+		model.Mobile,
+		model.Email,
+		model.NodelName,
+		model.NodelMobile,
+		model.NodelEmail,
+		status,
+		username,
+		machineIP,
+		deviceID,
+		latitude,
+		longitude,
+	).Scan(&success, &message)
 
 	if err != nil {
 		log.Println(err)

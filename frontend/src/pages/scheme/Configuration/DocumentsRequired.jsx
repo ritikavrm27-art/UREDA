@@ -63,7 +63,7 @@ export default function DocumentsRequired() {
             />
           </div>
 
-          <div className="selected-bar">
+          {/* <div className="selected-bar">
             <span className="selected-label">Selected:</span>
             {allSelected.length === 0 ? (
               <span className="selected-label">None</span>
@@ -74,7 +74,7 @@ export default function DocumentsRequired() {
                 </span>
               ))
             )}
-          </div>
+          </div> */}
         </div>
   );
 }

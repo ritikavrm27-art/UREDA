@@ -39,7 +39,7 @@ func GetOffices(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusBadRequest)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request",
 			},
@@ -72,7 +72,7 @@ func GetReportingOffice(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusBadRequest)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request",
 			},
@@ -105,7 +105,7 @@ func GetDropdownOffice(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusBadRequest)
 
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request",
 			},
@@ -154,7 +154,7 @@ func GetDistrict(w http.ResponseWriter, r *http.Request) {
 		utils.LogErrorToCSV("Office Page", "GetDistrict Stateid fetch", err.Error())
 		w.WriteHeader(http.StatusBadRequest)
 		json.NewEncoder(w).Encode(
-			models.LoginResponse{
+			models.ResponseModel{
 				Success: false,
 				Message: "Invalid request",
 			},

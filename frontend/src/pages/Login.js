@@ -1,9 +1,9 @@
 import React, { useState, useEffect  } from "react";
 import { useNavigate } from "react-router-dom";
 import { Image, Form} from 'react-bootstrap'
-import BASE_URL from "../config";
+import { BASE_URL } from "../config";
 import MessageModal from "../components/MessageModal";
-import axiosApi  from "../utils/axiosApi";
+import axiosApi  from "../utils/axiosAUTHApi";
 import SHA256 from "crypto-js/sha256";
 
 function Login() {

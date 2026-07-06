@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Image } from "react-bootstrap";
-import BASE_URL from "../config";
+import { BASE_URL } from "../config";
 
 function Header({ timeLeft, moduleName }) {
   const minutes = Math.floor(timeLeft / 60);
